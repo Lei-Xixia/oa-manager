@@ -1,16 +1,14 @@
-<script>
-export default {
-  name: "App",
-  mounted(){
-    this.$storage.setItem('age', "18")
-    this.$storage.clearItem('name')
-    this.$storage.clearAll()
-  }
-};
-</script>
-
 <template>
   <router-view></router-view>
 </template>
 
-<style></style>
+<script>
+export default {
+  name: "App",
+};
+</script>
+
+<style lang='scss'>
+@import './assets/style/reset.css';
+@import './assets/style/index.scss';
+</style>
